@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">reed-muller</string>
+    <string name="prompt_close">Ви впевнені що хочете вийти?</string>
+    <string name="base_name">Побудова генератора матриці</string>
+    <string name="sth_went_wrong">Something went wrong ;(</string>
+    <string name="BASE_URL">http://reed-muller.herokuapp.com/api/v1/</string>
+    <string name="code_length">Довжина коду n = 2^</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/white">
+    <include layout="@layout/header"/>
+
+    <ScrollView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+
+
+            <LinearLayout android:focusable="true"
+                          android:focusableInTouchMode="true"
+                          android:layout_width="0px"
+                          android:layout_height="0px">
+                <requestFocus/>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <NumberPicker android:id="@+id/np"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:width="100dip"
+                              android:focusable="false"/>
+                <Button
+                        android:onClick="generate"
+                        android:layout_toRightOf="@+id/np"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:text="Generate"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="28sp"
+                        />
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/codeLength"
+                    style="@style/cellText"
+                    android:textSize="25sp"/>
+
+            <HorizontalScrollView
+                    android:scrollbars="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    >
+                <TableLayout
+                        android:id="@+id/matrixTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

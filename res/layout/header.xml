@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal"
+                android:background="@drawable/header">
+
+    <LinearLayout
+            android:id="@+id/titleHolder"
+            android:layout_toRightOf="@+id/headerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/textViewTitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+    </LinearLayout>
+
+    <View
+            android:layout_height="5dp"
+            android:layout_width="fill_parent"
+            android:background="#bdc1c6"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>
